@@ -14,7 +14,7 @@ export const modules: Module[] = [
   {
     codename: 'Horizon',
     label: 'Sales',
-    description: 'Pipeline management & expansion tracking. AI-driven forecasting for fund distribution.',
+    description: 'Pipeline management & AI-driven forecasting.',
     icon: '/icons/module-horizon.svg',
     accentColor: 'oklch(0.55 0.22 250)',
     hue: 250,
@@ -25,7 +25,7 @@ export const modules: Module[] = [
   {
     codename: 'Sync',
     label: 'Relationship Management',
-    description: 'Build & maintain client relationships. Automated assignment workflows with intelligent routing.',
+    description: 'Client relationships & automated assignment workflows.',
     icon: '/icons/module-sync.svg',
     accentColor: 'oklch(0.55 0.20 270)',
     hue: 270,
@@ -36,7 +36,7 @@ export const modules: Module[] = [
   {
     codename: 'Forge',
     label: 'Onboarding',
-    description: 'Fund setup & legal documentation. Streamlined workflows from initiation to completion.',
+    description: 'Fund setup & legal documentation workflows.',
     icon: '/icons/module-forge.svg',
     accentColor: 'oklch(0.55 0.20 285)',
     hue: 285,
@@ -47,7 +47,7 @@ export const modules: Module[] = [
   {
     codename: 'Gate',
     label: 'Distribution',
-    description: 'Country approvals & cross-border distribution. Regulatory compliance at scale.',
+    description: 'Cross-border distribution & regulatory compliance.',
     icon: '/icons/module-gate.svg',
     accentColor: 'oklch(0.60 0.15 200)',
     hue: 200,
@@ -56,7 +56,7 @@ export const modules: Module[] = [
   {
     codename: 'Decode',
     label: 'KYC',
-    description: 'Identity verification & screening. AI-enhanced due diligence and risk assessment.',
+    description: 'Identity verification & AI-enhanced due diligence.',
     icon: '/icons/module-decode.svg',
     accentColor: 'oklch(0.55 0.22 290)',
     hue: 290,
@@ -66,7 +66,7 @@ export const modules: Module[] = [
   {
     codename: 'Watch',
     label: 'Oversight',
-    description: 'AI-powered oversight controls. Real-time monitoring and automated compliance checks.',
+    description: 'Real-time monitoring & automated compliance.',
     icon: '/icons/module-watch.svg',
     accentColor: 'oklch(0.55 0.18 240)',
     hue: 240,
@@ -75,7 +75,7 @@ export const modules: Module[] = [
   {
     codename: 'Shield',
     label: 'Risk Management',
-    description: 'Risk identification & mitigation. Proactive risk scoring with predictive analytics.',
+    description: 'Proactive risk scoring & predictive analytics.',
     icon: '/icons/module-shield.svg',
     accentColor: 'oklch(0.55 0.20 255)',
     hue: 255,
@@ -84,7 +84,7 @@ export const modules: Module[] = [
   {
     codename: 'Codex',
     label: 'Governance',
-    description: 'Document governance & compliance. Audit trails, policies, and regulatory reporting.',
+    description: 'Audit trails, policies & regulatory reporting.',
     icon: '/icons/module-codex.svg',
     accentColor: 'oklch(0.55 0.20 310)',
     hue: 310,
