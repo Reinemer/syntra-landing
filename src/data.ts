@@ -51,6 +51,7 @@ export const modules: Module[] = [
     icon: '/icons/module-gate.svg',
     accentColor: 'oklch(0.60 0.15 200)',
     hue: 200,
+    docsUrl: 'https://1drv.ms/w/c/90fbf24d4d00e063/IQAszl6CyXAQSYQzHhtkIBvIAUXI6YlcDPuJlHk0ejKVvqg',
     status: 'coming-soon',
   },
   {
@@ -95,3 +96,4 @@ export const modules: Module[] = [
 ]
 
 export const conceptDocsUrl = 'https://1drv.ms/x/c/90fbf24d4d00e063/IQCje0NkRApCS6pXK_uQsiXqAT8fCNCfeipjb38qXNzEeM0?e=0gue1J'
+export const distributionDocsUrl = 'https://1drv.ms/w/c/90fbf24d4d00e063/IQAszl6CyXAQSYQzHhtkIBvIAUXI6YlcDPuJlHk0ejKVvqg'
