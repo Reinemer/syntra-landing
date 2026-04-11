@@ -20,7 +20,7 @@ export const modules: Module[] = [
     hue: 250,
     appUrl: 'https://salesproject-six.vercel.app/',
     status: 'live',
-    docsUrl: undefined,
+    docsUrl: 'https://1drv.ms/x/c/4f052b07293c27a1/IQAVYJOkYwPoR498YNSM6kFkATjaHJiX3gzIuLvmhtt3BE0?e=0UO7su',
   },
   {
     codename: 'Sync',
