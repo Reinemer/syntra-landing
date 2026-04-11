@@ -30,7 +30,7 @@ export const modules: Module[] = [
     accentColor: 'oklch(0.55 0.20 270)',
     hue: 270,
     appUrl: 'https://dn-rm-app.vercel.app/',
-    docsUrl: 'https://1drv.ms/x/c/90fbf24d4d00e063/IQDGrDXDcKEdRKnYcTS9t0GEAX6xLrARPgAvhCi4PLZWrHc?e=DJpPo7',
+    docsUrl: 'https://1drv.ms/x/c/90fbf24d4d00e063/IQDGrDXDcKEdRKnYcTS9t0GOAX6xLrARPgAvhCi4PLZWrHc?e=DJpPo7',
     status: 'live',
   },
   {
