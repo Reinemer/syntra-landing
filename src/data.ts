@@ -61,8 +61,9 @@ export const modules: Module[] = [
     icon: '/icons/module-decode.svg',
     accentColor: 'oklch(0.55 0.22 290)',
     hue: 290,
+    appUrl: 'https://kyc-app-ten.vercel.app/',
     docsUrl: 'https://1drv.ms/x/c/90fbf24d4d00e063/IQAXmmPeN95hTZ9-xEP5e-kpAT0U9m7Fm7QxoRXn9s8wKbg?e=iu1tjA',
-    status: 'coming-soon',
+    status: 'live',
   },
   {
     codename: 'Watch',
@@ -71,7 +72,8 @@ export const modules: Module[] = [
     icon: '/icons/module-watch.svg',
     accentColor: 'oklch(0.55 0.18 240)',
     hue: 240,
-    status: 'coming-soon',
+    appUrl: 'https://dn-oversight-app.vercel.app/login',
+    status: 'live',
   },
   {
     codename: 'Shield',
