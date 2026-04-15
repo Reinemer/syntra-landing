@@ -73,6 +73,7 @@ export const modules: Module[] = [
     accentColor: 'oklch(0.55 0.18 240)',
     hue: 240,
     appUrl: 'https://dn-oversight-app.vercel.app/login',
+    docsUrl: 'https://1drv.ms/x/c/90fbf24d4d00e063/IQA9wOBjSWTdRq89wB9OJKpJAZnwWCfwOXg5ugEbF3u-QKg?e=5Zo7gq',
     status: 'live',
   },
   {
