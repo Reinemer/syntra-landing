@@ -86,6 +86,16 @@ export const modules: Module[] = [
     status: 'coming-soon',
   },
   {
+    codename: 'Board',
+    label: 'Fund Board',
+    description: 'Board governance workflows and meeting operations.',
+    icon: '/icons/module-codex.svg',
+    accentColor: 'oklch(0.56 0.16 220)',
+    hue: 220,
+    docsUrl: 'https://1drv.ms/x/c/90fbf24d4d00e063/IQDyxNbYn4raSqVPt4sYwSs7AVJhTtnq53E-G1BSIqMZXcc?e=LZwsW3',
+    status: 'coming-soon',
+  },
+  {
     codename: 'Codex',
     label: 'Governance',
     description: 'Audit trails, policies & regulatory reporting.',
