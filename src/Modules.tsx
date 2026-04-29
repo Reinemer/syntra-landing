@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { modules, type Module, conceptDocsUrl, distributionDocsUrl, issueTrackers, type IssueTracker } from './data'
+import { modules, type Module, conceptDocsUrl, distributionDocsUrl } from './data'
 import { AnimatedShinyText } from './components/ui/animated-shiny-text'
 import { TextGenerateEffect } from './components/ui/text-generate-effect'
 
@@ -20,6 +20,7 @@ function ModuleRow({ module, index, isHovered, onHover }: {
 }) {
   const hasApp = !!module.appUrl
   const hasDocs = !!module.docsUrl
+  const hasIssues = !!module.issuesUrl
   const isLive = module.status === 'live'
 
   return (
@@ -71,47 +72,15 @@ function ModuleRow({ module, index, isHovered, onHover }: {
               Docs <ArrowUpRight />
             </a>
           )}
-          {!hasApp && !hasDocs && (
+          {hasIssues && (
+            <a href={module.issuesUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs md:text-sm font-medium text-white/20 hover:text-white/50 transition-colors">
+              Issues <ArrowUpRight />
+            </a>
+          )}
+          {!hasApp && !hasDocs && !hasIssues && (
             <span className="text-xs text-white/15">—</span>
           )}
         </div>
-      </div>
-    </motion.div>
-  )
-}
-
-const GitHubIcon = () => (
-  <svg className="w-5 h-5 md:w-5 md:h-5" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
-  </svg>
-)
-
-function IssueRow({ tracker, index }: { tracker: IssueTracker; index: number }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.35, delay: (10 + index) * 0.04, ease }}
-      className="module-row"
-    >
-      <div className="flex items-center gap-4 md:gap-5 py-3.5 md:py-4 px-1 relative z-10">
-        <div className="w-11 h-11 md:w-12 md:h-12 rounded-xl flex items-center justify-center shrink-0 border border-white/[0.06] bg-white/[0.02] text-white/25">
-          <GitHubIcon />
-        </div>
-        <div className="flex flex-col flex-1 min-w-0">
-          <span className="text-base md:text-lg font-semibold tracking-[-0.01em] text-white/70">
-            {tracker.codename}
-          </span>
-          <span className="text-xs text-white/25">{tracker.module} · GitHub Issues</span>
-        </div>
-        <a
-          href={tracker.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 text-xs md:text-sm font-medium text-white/30 hover:text-white/60 transition-colors shrink-0"
-        >
-          Issues <ArrowUpRight />
-        </a>
       </div>
     </motion.div>
   )
@@ -210,16 +179,6 @@ export default function Modules() {
           <div className="mt-1 border-t border-white/[0.04]">
             <ResourceRow href={conceptDocsUrl} label="Syntra Concept" index={0} />
             <ResourceRow href={distributionDocsUrl} label="Distribution Registration" index={1} />
-          </div>
-
-          {/* GitHub Issues */}
-          <div className="mt-1 border-t border-white/[0.04]">
-            <div className="py-3 px-1">
-              <span className="text-[10px] font-semibold uppercase tracking-widest text-white/20">Issues &amp; Feedback</span>
-            </div>
-            {issueTrackers.map((tracker, i) => (
-              <IssueRow key={tracker.codename} tracker={tracker} index={i} />
-            ))}
           </div>
         </div>
       </section>

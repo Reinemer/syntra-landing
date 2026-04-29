@@ -7,6 +7,7 @@ export interface Module {
   hue: number
   appUrl?: string
   docsUrl?: string
+  issuesUrl?: string
   status: 'live' | 'coming-soon'
 }
 
@@ -74,6 +75,7 @@ export const modules: Module[] = [
     hue: 240,
     appUrl: 'https://dn-oversight-app.vercel.app/login',
     docsUrl: 'https://1drv.ms/x/c/90fbf24d4d00e063/IQA9wOBjSWTdRq89wB9OJKpJAZnwWCfwOXg5ugEbF3u-QKg?e=5Zo7gq',
+    issuesUrl: 'https://github.com/Reinemer/oversight-app/issues',
     status: 'live',
   },
   {
@@ -110,17 +112,3 @@ export const modules: Module[] = [
 
 export const conceptDocsUrl = 'https://1drv.ms/x/c/90fbf24d4d00e063/IQCje0NkRApCS6pXK_uQsiXqAT8fCNCfeipjb38qXNzEeM0?e=0gue1J'
 export const distributionDocsUrl = 'https://1drv.ms/w/c/90fbf24d4d00e063/IQAszl6CyXAQSYQzHhtkIBvIAUXI6YlcDPuJlHk0ejKVvqg'
-
-export interface IssueTracker {
-  module: string
-  codename: string
-  url: string
-}
-
-export const issueTrackers: IssueTracker[] = [
-  {
-    module: 'Oversight',
-    codename: 'Watch',
-    url: 'https://github.com/Reinemer/oversight-app/issues',
-  },
-]
