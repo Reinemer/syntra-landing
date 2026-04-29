@@ -110,3 +110,17 @@ export const modules: Module[] = [
 
 export const conceptDocsUrl = 'https://1drv.ms/x/c/90fbf24d4d00e063/IQCje0NkRApCS6pXK_uQsiXqAT8fCNCfeipjb38qXNzEeM0?e=0gue1J'
 export const distributionDocsUrl = 'https://1drv.ms/w/c/90fbf24d4d00e063/IQAszl6CyXAQSYQzHhtkIBvIAUXI6YlcDPuJlHk0ejKVvqg'
+
+export interface IssueTracker {
+  module: string
+  codename: string
+  url: string
+}
+
+export const issueTrackers: IssueTracker[] = [
+  {
+    module: 'Oversight',
+    codename: 'Watch',
+    url: 'https://github.com/Reinemer/oversight-app/issues',
+  },
+]
